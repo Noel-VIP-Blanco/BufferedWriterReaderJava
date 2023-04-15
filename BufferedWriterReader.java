@@ -26,19 +26,19 @@ public class BufferedWriterReader
                 firstName = sc.nextLine();
                 System.out.println("Enter contact: ");
                 contact = sc.nextLine();
-                    try{
-                        FileWriter file = new FileWriter("Student.txt", true);
-                        BufferedWriter output = new BufferedWriter(file);
-                        output.write(id + " ");
-                        output.write(lastName + " ");
-                        output.write(firstName + " "); 
-                        output.write(contact + " ");
-                        output.newLine();
-                        output.close();
-                    }
-                    catch(Exception e){
-                        e.getStackTrace();
-                    }
+                try{
+                    FileWriter file = new FileWriter("Student.txt", true);
+                    BufferedWriter output = new BufferedWriter(file);
+                    output.write(id + " ");
+                    output.write(lastName + " ");
+                    output.write(firstName + " "); 
+                    output.write(contact + " ");
+                    output.newLine();
+                    output.close();
+                }
+                catch(Exception e){
+                    e.getStackTrace();
+                }
                 System.out.println();
             }
             else if(choiceInt == 2){
